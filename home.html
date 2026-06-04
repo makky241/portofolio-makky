@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Makky Shirazy - Portofolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      background-color: #F8F9FA; 
+    }
+    
+    .text-shadow-solid { text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4); }
+
+    html { scroll-padding-top: 120px; }
+
+    /* 🔥 ANIMASI SCROLL REVEAL TERKEREN DI DUNIA (3D + BLUR) 🔥 */
+    .reveal-cool {
+      opacity: 0;
+      filter: blur(8px);
+      transform: translateY(80px) rotateX(-25deg) scale(0.9);
+      transition: all 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .reveal-cool.active {
+      opacity: 1;
+      filter: blur(0);
+      transform: translateY(0) rotateX(0) scale(1);
+    }
+
+    /* HILANGKAN SCROLLBAR DI SLIDER PORTOFOLIO & MODAL */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+
+<body class="overflow-x-hidden text-black flex flex-col min-h-screen">
+
+<nav class="fixed top-8 w-full flex justify-center gap-4 md:gap-6 z-50">
+  <a href="#home" class="nav-link px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#4B82C3] text-black font-medium hover:scale-105 hover:bg-[#4B82C3] transition-all duration-300 cursor-pointer shadow-sm">
+    Home
+  </a>
+  <a href="#about" class="nav-link px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#cccccc] text-black font-medium hover:scale-105 hover:bg-[#4B82C3] transition-all duration-300 cursor-pointer shadow-sm">
+    About
+  </a>
+  <a href="#portofolio" class="nav-link px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#cccccc] text-black font-medium hover:scale-105 hover:bg-[#4B82C3] transition-all duration-300 cursor-pointer shadow-sm">
+    Portofolio
+  </a>
+  <a href="#contact" class="nav-link px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#cccccc] text-black font-medium hover:scale-105 hover:bg-[#4B82C3] transition-all duration-300 cursor-pointer shadow-sm">
+    Contact
+  </a>
+</nav>
+
+<section id="home" class="relative min-h-screen w-full flex items-center justify-center px-6 pt-24 pb-10">
+  <div class="reveal-cool relative w-full max-w-[1200px] h-[75vh] md:h-[80vh] rounded-[40px] border-[3px] border-black shadow-[0_15px_40px_rgba(0,0,0,0.15)] overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-[center_55%] bg-no-repeat" style="background-image: url('/Gambar/fotogua.jpg');"></div>
+    <div class="absolute inset-0 bg-white/40"></div>
+    <div class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
+      <h1 class="text-6xl md:text-8xl font-black text-black text-shadow-solid tracking-tight">Makky Shirazy</h1>
+      <p class="mt-5 text-lg md:text-xl font-semibold text-black bg-white/40 px-6 py-2 rounded-full backdrop-blur-md border border-white/50 shadow-sm">
+        Photographer | Videographer | UI/UX Designer
+      </p>
+      <div class="mt-6 flex justify-center gap-5 text-3xl">
+        <a href="https://www.instagram.com/makkyshrzy._?igsh=MXN6cDVwbDhlZW5xZw==" target="_blank" rel="noopener noreferrer" class="bg-white/60 w-14 h-14 flex items-center justify-center rounded-full backdrop-blur-sm border border-white/50 shadow-sm hover:scale-110 transition text-black">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/makky-shirazy-05b189264" target="_blank" rel="noopener noreferrer" class="bg-white/60 w-14 h-14 flex items-center justify-center rounded-full backdrop-blur-sm border border-white/50 shadow-sm hover:scale-110 transition text-black">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="w-full flex flex-col items-center pt-24 px-6 pb-20">
+  <h1 class="reveal-cool text-6xl md:text-7xl font-bold text-[#222]">About Me</h1>
+  <p class="reveal-cool mt-8 text-center max-w-4xl text-lg md:text-xl font-medium leading-relaxed text-gray-900" style="transition-delay: 100ms;">
+    Hai, saya Makky Shirazy seorang fotografer dan videografer yang memiliki ambisi untuk terus berkembang, menciptakan karya visual yang memiliki ciri khas pribadi.
+  </p>
+
+  <div class="reveal-cool mt-16 w-full max-w-5xl flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16" style="transition-delay: 200ms;">
+    <div class="w-full md:w-1/2 flex justify-center">
+        <div class="w-64 md:w-[300px] h-[350px] md:h-[400px] rounded-[40px] border-[3px] border-black shadow-[0_15px_40px_rgba(0,0,0,0.15)] overflow-hidden bg-white">
+            <img src="/Gambar/fotogua3.jpeg" alt="Makky Shirazy" onerror="this.src='https://picsum.photos/400/500?random=101'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+        </div>
+    </div>
+    <div class="w-full md:w-1/2 flex flex-col gap-8 text-lg md:text-xl">
+      <div class="flex items-center gap-5"><i class="fas fa-chevron-right text-2xl font-black text-black"></i><p><span class="font-semibold">Phone :</span> <span class="font-light ml-2">+6287870515977</span></p></div>
+      <div class="flex items-center gap-5"><i class="fas fa-chevron-right text-2xl font-black text-black"></i><p><span class="font-semibold">City :</span> <span class="font-light ml-2">Tangerang Selatan, Banten</span></p></div>
+      <div class="flex items-center gap-5"><i class="fas fa-chevron-right text-2xl font-black text-black"></i><p><span class="font-semibold">Age :</span> <span class="font-light ml-2">19</span></p></div>
+      <div class="flex items-center gap-5"><i class="fas fa-chevron-right text-2xl font-black text-black"></i><p><span class="font-semibold">Email :</span> <span class="font-light ml-2">makkyshirazy2@gmail.com</span></p></div>
+    </div>
+  </div>
+
+  <div class="w-full max-w-7xl mx-auto mt-32">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-20">
+      <div class="reveal-cool flex flex-col" style="transition-delay: 150ms;">
+        <h2 class="text-5xl md:text-6xl font-bold text-center text-[#222] mb-12">Education</h2>
+        <div class="border-l-[1.5px] border-[#3B5249] ml-4 space-y-12 pb-8">
+          <div class="relative pl-8">
+            <div class="absolute -left-[11px] top-1.5 w-[20px] h-[20px] rounded-full border-[1.5px] border-[#3B5249] bg-[#FAFAFA]"></div>
+            <h3 class="text-2xl font-semibold text-[#222]">SMAS Triguna Utama</h3>
+            <p class="text-xl text-gray-800 mt-2 mb-4">2022 - 2025</p>
+            <p class="text-[15px] leading-relaxed text-gray-800 text-justify">Mengikuti program studi Ilmu Pengetahuan Alam (IPA) dengan fokus pada pengembangan keterampilan analitis dan pemecahan masalah. Aktif berpartisipasi dalam kegiatan ekstrakurikuler desain grafis dan teknologi informasi, yang memperkuat minat dan keterampilan dalam bidang desain dan teknologi digital.</p>
+          </div>
+          <div class="relative pl-8">
+            <div class="absolute -left-[11px] top-1.5 w-[20px] h-[20px] rounded-full border-[1.5px] border-[#3B5249] bg-[#FAFAFA]"></div>
+            <h3 class="text-2xl font-semibold text-[#222]">UIN Syarif Hidayatullah Jakarta</h3>
+            <p class="text-xl text-gray-800 mt-2 mb-4">2025 - Sekarang</p>
+            <p class="text-[15px] leading-relaxed text-gray-800 text-justify">Sedang menempuh pendidikan di program studi Sistem Informasi dengan fokus pada pengembangan teknologi digital, analisis sistem, dan pemrograman. Memanfaatkan latar belakang akademik ini untuk mendukung aktivitas kreatif di bidang fotografi dan videografi, khususnya dalam pengolahan visual, manajemen konten digital, serta pemanfaatan tools berbasis teknologi.</p>
+          </div>
+        </div>
+      </div>
+      <div class="reveal-cool flex flex-col" style="transition-delay: 300ms;">
+        <h2 class="text-5xl md:text-6xl font-bold text-center text-[#222] mb-12">Experience</h2>
+        <div class="border-l-[1.5px] border-[#3B5249] ml-4 h-full">
+          <div class="relative pl-8">
+            <div class="absolute -left-[11px] top-1.5 w-[20px] h-[20px] rounded-full border-[1.5px] border-[#3B5249] bg-[#FAFAFA]"></div>
+            <h3 class="text-2xl font-semibold text-[#222]">Organisasi Intra Sekolah (OSIS)</h3>
+            <p class="text-xl text-gray-800 mt-2 mb-4">2022 - 2025</p>
+            <ul class="list-disc list-outside ml-5 text-[15px] leading-relaxed text-gray-800 space-y-2">
+              <li>Memimpin Divisi TIK dalam pengelolaan dokumentasi dan publikasi digital organisasi</li>
+              <li>Terlibat dalam 12+ event (end-to-end execution)</li>
+              <li>Bertanggung jawab sebagai fotografer & videografer utama</li>
+              <li>Menghasilkan konten visual untuk kebutuhan branding dan publikasi</li>
+              <li>Terbiasa bekerja dengan deadline dan tekanan event</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="portofolio" class="relative w-full min-h-screen flex flex-col items-center pt-32 px-6 pb-20">
+  <div class="relative z-10 w-full max-w-7xl flex flex-col items-center">
+    
+    <div class="reveal-cool flex flex-wrap justify-center gap-3 md:gap-5 mb-12 relative z-20">
+      <button data-filter="all" class="filter-btn px-6 md:px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#FDE047] text-black font-semibold text-base hover:scale-105 transition shadow-sm cursor-pointer">
+        All
+      </button>
+      <button data-filter="photography" class="filter-btn px-6 md:px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#cccccc] text-black font-semibold text-base hover:scale-105 transition shadow-sm cursor-pointer">
+        Photography
+      </button>
+      <button data-filter="videography" class="filter-btn px-6 md:px-8 py-1.5 rounded-full border-[2.5px] border-black bg-[#cccccc] text-black font-semibold text-base hover:scale-105 transition shadow-sm cursor-pointer">
+        Videography
+      </button>
+    </div>
+
+    <p class="reveal-cool text-gray-400 font-medium text-sm md:text-base mb-6 tracking-wide uppercase" style="transition-delay: 100ms;">(Geser untuk melihat, klik foto untuk memperbesar karya)</p>
+
+    <div class="reveal-cool w-full relative group px-4 md:px-14" style="transition-delay: 200ms;">
+      <button id="slide-left" class="absolute left-0 md:left-2 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center opacity-70 hover:opacity-100 transition hover:scale-110 shadow-lg cursor-pointer">
+        <i class="fas fa-chevron-left text-xl"></i>
+      </button>
+
+      <div id="porto-slider" class="w-full flex overflow-x-auto snap-x snap-mandatory gap-6 md:gap-8 pb-8 px-2 no-scrollbar scroll-smooth relative z-10">
+        
+        <div data-category="photography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+onclick="openModal('/Gambar/FotoPorto1.png', 'Kimbo X Prambors', '2 September 2024', '44 Likes', 'Penampilan Melissa Putri pada event sosis Kimbo X Prambors SMAS Triguna Utama')">
+  <img src="/Gambar/FotoPorto1.png" alt="Photography 1" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+  <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+    <p class="text-[#4B82C3] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Photography</p>
+    <h3 class="text-white text-lg md:text-xl font-bold leading-tight">Kimbo X Prambors</h3>
+  </div>
+</div>
+
+        <div data-category="photography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/FotoPorto3.png', 'Kimbo X Prambors', '2 September 2024', '44 Likes', 'Penampilan Melissa Putri pada event sosis Kimbo X Prambors SMAS Triguna Utama')">
+          <img src="/Gambar/FotoPorto3.png" alt="Photography 2" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#4B82C3] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Photography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">Kimbo X Prambors</h3>
+          </div>
+        </div>
+
+        <div data-category="photography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/FotoPorto2.png', 'Karya Ilmiah Remaja', '2 September 2024', '73 Likes', 'Penampilan Ekstrakurikuler Karya Ilmiah Remaja SMAS Triguna Utama')">
+          <img src="/Gambar/FotoPorto2.png" alt="Photography 3" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#4B82C3] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Photography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">Karya Ilmiah Remaja</h3>
+          </div>
+        </div>
+
+        <div data-category="photography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/WORKSHOP.png', 'WORKSHOP DESIGN DIGITAL', '26 Juni 2024', '23 likes', 'Mengisi materi seminar Design Grafis untuk anggota OSIS SMAS Triguna Utama')">
+          <img src="/Gambar/WORKSHOP.png" alt="Pemateri" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#4B82C3] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Seminar</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">Seminar Workshop Design Digital</h3>
+          </div>
+        </div>
+
+        <div data-category="videography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/Teaser Wisuda SI.mp4', 'Teaser Wisuda', '22 Mei 2026', 'Story Instagram Himpunan Sistem Informasi (HIMSI)', 'Video Editor dalam pembuatan Teaser Wisuda Sistem Informasi yang ke-140')">
+          <video src="/Gambar/Teaser Wisuda SI.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" autoplay muted loop playsinline></video>
+          <div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition duration-500 transform scale-50 group-hover:scale-100">
+             <i class="fas fa-play-circle text-white text-5xl drop-shadow-md"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#FDE047] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Videography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">Teaser Wisuda</h3>
+          </div>
+        </div>
+
+        <div data-category="videography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/KIMBO PROBITES SKULPRIZE.mp4', 'AFTER MOVIE EVENT', '22 July 2024', '4.962 Views', 'After movie event Prambors X Kimbo Melissa Putri sebagai quest star dan berbagai pertunjukkan oleh ekskul Triguna Utam')">
+          <video src="/Gambar/KIMBO PROBITES SKULPRIZE.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" autoplay muted loop playsinline></video>
+          <div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition duration-500 transform scale-50 group-hover:scale-100">
+             <i class="fas fa-play-circle text-white text-5xl drop-shadow-md"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#FDE047] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Videography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">After Movie Event</h3>
+          </div>
+        </div>
+
+        <div data-category="videography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/PESANTREN KILAT.mp4', 'AFTER MOVIE EVENT', '27-31 Maret 2023', '984 Views', 'After movie event pesantren kilat SMAS Triguna Utama')">
+          <video src="/Gambar/PESANTREN KILAT.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" autoplay muted loop playsinline></video>
+          <div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition duration-500 transform scale-50 group-hover:scale-100">
+             <i class="fas fa-play-circle text-white text-5xl drop-shadow-md"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#FDE047] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Videography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">After Movie Event</h3>
+          </div>
+        </div>
+
+        <div data-category="videography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/MPLS 2023.mp4', 'AFTER MOVIE EVENT', '17-20 Juli 2023', '1.362 Views', 'After movie event Masa Pengenalan Lingkungan Sekolah')">
+          <video src="/Gambar/MPLS 2023.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" autoplay muted loop playsinline></video>
+          <div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition duration-500 transform scale-50 group-hover:scale-100">
+             <i class="fas fa-play-circle text-white text-5xl drop-shadow-md"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#FDE047] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Videography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">After Movie Event</h3>
+          </div>
+        </div>
+
+        <div data-category="videography" class="porto-card relative snap-center shrink-0 w-[280px] h-[200px] md:w-[400px] md:h-[280px] rounded-[30px] overflow-hidden shadow-lg border-[3px] border-transparent hover:border-black cursor-pointer group" 
+        onclick="openModal('/Gambar/HARI GURU.mp4', 'AFTER MOVIE EVENT', '24 November 2023', '1.438 Views', 'After movie event hari guru 24 November 2023')">
+          <video src="/Gambar/HARI GURU.mp4" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition duration-500" autoplay muted loop playsinline></video>
+          <div class="absolute inset-0 flex items-center justify-center z-10 opacity-0 group-hover:opacity-100 transition duration-500 transform scale-50 group-hover:scale-100">
+             <i class="fas fa-play-circle text-white text-5xl drop-shadow-md"></i>
+          </div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition duration-500"></div>
+          <div class="absolute bottom-6 left-6 right-6 transform translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 ease-out z-20">
+            <p class="text-[#FDE047] text-xs md:text-sm font-bold tracking-widest uppercase mb-1">Videography</p>
+            <h3 class="text-white text-lg md:text-xl font-bold leading-tight">After Movie Event</h3>
+          </div>
+        </div>
+
+
+      </div>
+
+      <button id="slide-right" class="absolute right-0 md:right-2 top-1/2 -translate-y-1/2 z-30 w-12 h-12 rounded-full bg-black text-white flex items-center justify-center opacity-70 hover:opacity-100 transition hover:scale-110 shadow-lg cursor-pointer">
+        <i class="fas fa-chevron-right text-xl"></i>
+      </button>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="w-full flex flex-col items-center pt-32 px-6 pb-20" style="perspective: 1000px;">
+  
+  <p class="reveal-cool text-[#4B82C3] font-black tracking-[0.2em] uppercase mb-4 drop-shadow-sm">Start Build Something Great</p>
+  <h1 class="reveal-cool text-5xl md:text-6xl font-black text-[#222] mb-20 text-center tracking-tight" style="transition-delay: 50ms;">Have some idea? Let's talk</h1>
+
+  <div class="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+    
+    <div class="reveal-cool flex flex-col gap-10" style="transition-delay: 150ms;">
+       <h2 class="text-4xl font-bold text-[#222]">Get in Touch</h2>
+       
+       <div class="flex flex-col gap-8">
+         <div>
+            <p class="text-sm font-bold text-gray-400 tracking-widest uppercase mb-2">Email Resmi</p>
+            <p class="text-xl font-bold text-black border-l-4 border-[#FDE047] pl-4 transition-all hover:pl-6 hover:text-[#4B82C3]">makkyshirazy2@gmail.com</p>
+         </div>
+         <div>
+            <p class="text-sm font-bold text-gray-400 tracking-widest uppercase mb-2">Whatsapp / Phone</p>
+            <p class="text-xl font-bold text-black border-l-4 border-[#FDE047] pl-4 transition-all hover:pl-6 hover:text-[#4B82C3]">+62 878-7051-5977</p>
+         </div>
+         <div>
+            <p class="text-sm font-bold text-gray-400 tracking-widest uppercase mb-2">Location</p>
+            <p class="text-xl font-bold text-black border-l-4 border-[#FDE047] pl-4 transition-all hover:pl-6 hover:text-[#4B82C3]">Tangerang Selatan, Banten</p>
+         </div>
+       </div>
+    </div>
+
+    <div class="reveal-cool bg-white rounded-[40px] border-[3px] border-black shadow-[0_15px_40px_rgba(0,0,0,0.15)] p-8 md:p-12" style="transition-delay: 300ms;">
+       <h2 class="text-3xl font-bold text-[#222] mb-8">Send Message</h2>
+       
+       <form action="https://formspree.io/f/xqenpnvg" method="POST" class="flex flex-col gap-6">
+          <div class="flex flex-col md:flex-row gap-6">
+             <div class="flex flex-col flex-1">
+                <label class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Name</label>
+                <input type="text" name="name" placeholder="Your Name" required class="w-full border-b-[2px] border-gray-300 focus:border-[#4B82C3] outline-none bg-transparent py-2 text-black font-medium transition-colors">
+             </div>
+             <div class="flex flex-col flex-1">
+                <label class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Email</label>
+                <input type="email" name="email" placeholder="Your Email" required class="w-full border-b-[2px] border-gray-300 focus:border-[#4B82C3] outline-none bg-transparent py-2 text-black font-medium transition-colors">
+             </div>
+          </div>
+          <div class="flex flex-col mt-2">
+             <label class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Subject</label>
+             <input type="text" name="subject" placeholder="Subject" required class="w-full border-b-[2px] border-gray-300 focus:border-[#4B82C3] outline-none bg-transparent py-2 text-black font-medium transition-colors">
+          </div>
+          <div class="flex flex-col mt-2">
+             <label class="text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Message</label>
+             <textarea name="message" rows="3" placeholder="Your Message" required class="w-full border-b-[2px] border-gray-300 focus:border-[#4B82C3] outline-none bg-transparent py-2 text-black font-medium transition-colors resize-none"></textarea>
+          </div>
+          <button type="submit" class="mt-8 bg-[#4B82C3] text-white font-bold tracking-widest uppercase py-4 rounded-full border-[2.5px] border-black hover:bg-[#FDE047] hover:text-black transition-all duration-300 w-full md:w-auto md:px-12 self-start shadow-[0_5px_15px_rgba(0,0,0,0.1)] hover:scale-105 transform">
+             Send Message
+          </button>
+       </form>
+    </div>
+
+  </div>
+</section>
+
+<footer class="w-full py-10 mt-12 flex justify-center items-center">
+  <p class="text-gray-400 font-semibold text-sm md:text-base tracking-widest text-center">
+    &copy; 2026 MAKKY SHIRAZY. ALL RIGHTS RESERVED.
+  </p>
+</footer>
+
+<!-- MODAL / LIGHTBOX -->
+<div id="porto-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300 p-4">
+  <button onclick="closeModal()" class="absolute top-4 md:top-8 right-6 md:right-10 text-white text-5xl hover:text-[#FDE047] transition cursor-pointer z-50">&times;</button>
+  
+  <div class="relative flex flex-col w-full max-w-5xl bg-[#1A1A1A] rounded-[30px] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.7)] max-h-[90vh] overflow-y-auto no-scrollbar">
+      
+      <!-- TAMBAHAN UNTUK WADAH VIDEO / FOTO -->
+      <div id="modal-media-container" class="w-full bg-black flex justify-center items-center relative min-h-[30vh]">
+          <img id="modal-img" src="" alt="Karya Makky" class="max-h-[60vh] w-auto object-contain hidden">
+          <iframe id="modal-video" src="" class="w-full aspect-video hidden" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <video id="modal-video-local" controls class="w-full max-h-[60vh] hidden"></video>
+      </div>
+      
+      <div class="p-8 md:p-12 flex flex-col items-center text-center">
+          <h3 id="modal-title" class="text-white text-3xl md:text-4xl font-bold mb-4 tracking-wide"></h3>
+          
+          <div class="flex flex-wrap justify-center items-center gap-6 text-[#FDE047] text-sm md:text-base font-bold mb-6 uppercase tracking-widest">
+             <span class="flex items-center gap-2"><i class="far fa-calendar-alt"></i> <span id="modal-date"></span></span>
+             <span class="flex items-center gap-2"><i class="far fa-eye"></i> <span id="modal-views"></span></span>
+          </div>
+          
+          <p id="modal-desc" class="text-gray-300 text-base md:text-lg leading-relaxed max-w-3xl"></p>
+      </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= (sectionTop - 150)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('bg-[#4B82C3]');
+        link.classList.add('bg-[#cccccc]');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.remove('bg-[#cccccc]');
+          link.classList.add('bg-[#4B82C3]');
+        }
+      });
+    });
+
+    // KODE ANIMASI REVEAL YANG KEMARIN HILANG SUDAH SAYA KEMBALIKAN DI SINI
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal, .reveal-cool");
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 100;
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+    window.addEventListener("scroll", reveal);
+    reveal();
+
+    const slider = document.getElementById('porto-slider');
+    const btnLeft = document.getElementById('slide-left');
+    const btnRight = document.getElementById('slide-right');
+
+    if(slider && btnLeft && btnRight) {
+      btnLeft.addEventListener('click', () => {
+        slider.scrollBy({ left: -430, behavior: 'smooth' }); 
+      });
+      btnRight.addEventListener('click', () => {
+        slider.scrollBy({ left: 430, behavior: 'smooth' }); 
+      });
+    }
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const portoCards = document.querySelectorAll('.porto-card');
+
+    if(filterBtns.length > 0) {
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-[#FDE047]');
+            b.classList.add('bg-[#cccccc]');
+          });
+          
+          btn.classList.remove('bg-[#cccccc]');
+          btn.classList.add('bg-[#FDE047]');
+
+          const filterValue = btn.getAttribute('data-filter');
+
+          portoCards.forEach(card => {
+            if (filterValue === 'all' || card.getAttribute('data-category') === filterValue) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+
+          if(slider) {
+            slider.scrollTo({ left: 0, behavior: 'smooth' });
+          }
+        });
+      });
+    }
+
+  });
+
+  // LOGIKA MODAL CERDAS (FOTO & VIDEO LOKAL)
+  function openModal(src, title, date, views, desc) {
+    const modal = document.getElementById('porto-modal');
+    const img = document.getElementById('modal-img');
+    const iframe = document.getElementById('modal-video');
+    const localVideo = document.getElementById('modal-video-local');
+    
+    // Sembunyikan semua media
+    img.classList.add('hidden');
+    iframe.classList.add('hidden');
+    localVideo.classList.add('hidden');
+    
+    // Reset source
+    img.src = "";
+    iframe.src = "";
+    localVideo.src = "";
+
+    // CEK LOGIKA: apakah ini video lokal, youtube, atau foto?
+    if (src.includes('youtube.com') || src.includes('youtu.be')) {
+      iframe.src = src;
+      iframe.classList.remove('hidden');
+    } else if (src.toLowerCase().endsWith('.mp4')) {
+      localVideo.src = src;
+      localVideo.classList.remove('hidden');
+      localVideo.play(); // Auto-play video lokal
+    } else {
+      img.src = src;
+      img.classList.remove('hidden');
+    }
+
+    document.getElementById('modal-title').innerText = title;
+    document.getElementById('modal-date').innerText = date;
+    document.getElementById('modal-views').innerText = views;
+    document.getElementById('modal-desc').innerText = desc;
+    
+    modal.classList.remove('hidden');
+    setTimeout(() => modal.classList.remove('opacity-0'), 10);
+  }
+
+  function closeModal() {
+    const modal = document.getElementById('porto-modal');
+    modal.classList.add('opacity-0');
+    
+    // PAUSE VIDEO SAAT TUTUP
+    document.getElementById('modal-video-local').pause();
+    
+    setTimeout(() => modal.classList.add('hidden'), 300);
+  }
+</script>
+
+</body>
+</html>
